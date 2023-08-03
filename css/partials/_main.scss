@@ -1,0 +1,19 @@
+.main-font {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2.1rem;
+    margin-top: 7rem;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+  }
+
+
+.modal-layout{
+  background: #1f1a1a85;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+}

@@ -1,0 +1,651 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&family=Ubuntu:wght@300;400;500;700&display=swap");
+:root {
+  --body-bg-color: #1a1c1d;
+  --text-color: #aaaebc;
+  --hr-color: #26292a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-font-menu {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+}
+
+.nav-shadow {
+  box-shadow: 0.5px 0.7px 1.6px rgba(0, 0, 0, 0.057), 1.1px 1.7px 3.8px rgba(0, 0, 0, 0.082), 1.9px 3px 6.9px rgba(0, 0, 0, 0.101), 3.2px 5px 11.4px rgba(0, 0, 0, 0.119), 5.3px 8.2px 18.8px rgba(0, 0, 0, 0.138), 9.2px 14.3px 32.8px rgba(0, 0, 0, 0.163), 20px 31px 71px rgba(0, 0, 0, 0.22);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+.menu li {
+  margin-inline: 0.5rem;
+}
+.menu a {
+  position: relative;
+  display: block;
+}
+.menu a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.125rem;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(126, 125, 125), rgb(228, 218, 218), rgb(228, 218, 218), rgb(126, 125, 125), rgb(0, 0, 0));
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease-in-out;
+}
+.menu a:hover::before {
+  transform: scaleX(1);
+}
+
+.transparent-button {
+  background-color: transparent;
+}
+
+.dropdown-item:active {
+  background-color: transparent;
+}
+
+.menu[data-animation=to-left] a::before {
+  transform-origin: right;
+}
+
+.menu[data-animation=center] a::before {
+  transform-origin: center;
+}
+
+.menu[data-animation=bonus] a::before {
+  transform-origin: right;
+}
+
+.menu[data-animation=bonus] a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+}
+
+.renier-logo {
+  width: 125px;
+}
+
+.footer-menu {
+  background-color: #0d2033;
+  color: #fff;
+  margin-top: 0.313rem;
+  padding-inline: 0;
+  font-family: "Russo One", sans-serif;
+}
+
+.copy-menu {
+  background-color: #0a1a2a;
+  padding-block: 0.188rem;
+  justify-content: center;
+  display: flex;
+  letter-spacing: 0.125rem;
+}
+
+.container .box-class {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: end;
+}
+.container .box-class a:hover {
+  color: aqua;
+  transform: rotateY(360deg);
+  transition: 0.5s;
+}
+
+.is-pair {
+  display: flex;
+  flex-direction: column;
+}
+.is-pair div:nth-child(odd) {
+  flex-direction: row-reverse !important;
+  padding: 1em 0;
+}
+
+@media (max-width: 576px) {
+  .is-mobile {
+    flex-direction: column;
+  }
+  .login-box {
+    width: 300px !important;
+  }
+  .box-class {
+    justify-content: center !important;
+  }
+  .box-img-class {
+    justify-content: center !important;
+  }
+  .box-img-class img {
+    width: 12.5rem !important;
+  }
+  .mid-section {
+    padding-inline: 2rem 0;
+    text-align: center;
+  }
+  .is-pair div:nth-child(odd) {
+    flex-direction: column-reverse !important;
+    padding: 1rem;
+  }
+  .is-pair div:nth-child(even) {
+    flex-direction: column-reverse !important;
+    padding: 1rem;
+  }
+  .container-img {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container-img .box-img img {
+    height: 400px;
+    margin-top: 4rem;
+  }
+  .galery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .close {
+    top: 18rem;
+    right: 2rem;
+  }
+  .width-img {
+    width: 100% !important;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 18px;
+  }
+  .menu a {
+    position: relative;
+    display: block;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    text-align: left;
+    color: #000;
+  }
+  .navbar-nav .dropdown-menu {
+    background: #f8f9fa;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .renier-logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 125px;
+  }
+  .v-landscape {
+    display: none;
+  }
+  .v-mobile {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .v-tablet {
+    flex-direction: column !important;
+  }
+  .v-mobile {
+    display: none;
+  }
+  .v-landscape {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .v-landscape {
+    display: none;
+  }
+}
+.galery-font {
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  padding-top: 6rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-decoration: underline;
+}
+
+.galery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  width: 95%;
+  gap: 10px;
+  margin: auto;
+  padding: 40px 0 0 0;
+  overflow: hidden;
+}
+.galery img {
+  width: 100%;
+  vertical-align: top;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.5s;
+  box-shadow: 0.5px 0.7px 1.6px rgba(0, 0, 0, 0.057), 1.1px 1.7px 3.8px rgba(0, 0, 0, 0.082), 1.9px 3px 6.9px rgba(0, 0, 0, 0.101), 3.2px 5px 11.4px rgba(0, 0, 0, 0.119), 5.3px 8.2px 18.8px rgba(0, 0, 0, 0.138), 9.2px 14.3px 32.8px rgba(0, 0, 0, 0.163), 20px 31px 71px rgba(0, 0, 0, 0.22);
+}
+.galery > a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.galery:hover img {
+  filter: blur(2px);
+  transform: rotate(10deg) scale(1.3);
+}
+
+.light-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+.light-box img {
+  width: 75vw;
+  max-height: 70vh;
+}
+
+.light-box:target {
+  transform: scale(1);
+}
+
+.close {
+  display: block;
+  position: absolute;
+  top: 6rem;
+  right: 8rem;
+  background: #851919;
+  color: #fff;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.next {
+  display: block;
+  background: #851919;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.main-font {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.1rem;
+  margin-top: 7rem;
+}
+
+.nav-link {
+  text-transform: uppercase;
+}
+
+.modal-layout {
+  background: rgba(31, 26, 26, 0.5215686275);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+}
+
+.footer-font {
+  font-family: "Russo One", sans-serif;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 200px);
+  width: 400px;
+  padding: 40px;
+  margin: 20px auto;
+  transform: translate(-50%, -55%);
+  background: rgba(0, 0, 0, 0.9);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #fff);
+  animation: btn-anim1 1.5s linear infinite;
+}
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #fff);
+  animation: btn-anim2 1.5s linear infinite;
+  animation-delay: 0.375s;
+}
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #fff);
+  animation: btn-anim3 1.5s linear infinite;
+  animation-delay: 0.75s;
+}
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #fff);
+  animation: btn-anim4 1.5s linear infinite;
+  animation-delay: 1.125s;
+}
+.login-box a:hover {
+  background: #fff;
+  color: #272727;
+  border-radius: 5px;
+}
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 3px;
+}
+.login-box p:first-child {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.login-box p:first-child:last-child {
+  color: #aaa;
+  font-size: 14px;
+}
+.login-box .user-box {
+  position: relative;
+}
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.login-box .login-box .user-box input:focus ~ label,
+.login-box .login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #fff;
+  font-size: 12px;
+}
+
+.login-box a.a2 {
+  color: #fff;
+  text-decoration: none;
+}
+.login-box a.a2:hover {
+  background: transparent;
+  color: #aaa;
+  border-radius: 5px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  margin: 20px auto;
+  transform: translate(-50%, -55%);
+  background: rgba(0, 0, 0, 0.9);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+.login-box p:first-child {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.login-box .user-box {
+  position: relative;
+}
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box input:focus ~ label, .login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #fff;
+  font-size: 12px;
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 3px;
+}
+.login-box form a:hover {
+  background: #fff;
+  color: #272727;
+  border-radius: 5px;
+}
+.login-box form a span {
+  position: absolute;
+  display: block;
+}
+.login-box form a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #fff);
+  animation: btn-anim1 1.5s linear infinite;
+}
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+.login-box form a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #fff);
+  animation: btn-anim2 1.5s linear infinite;
+  animation-delay: 0.375s;
+}
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+.login-box form a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #fff);
+  animation: btn-anim3 1.5s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+.login-box form a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #fff);
+  animation: btn-anim4 1.5s linear infinite;
+  animation-delay: 1.125s;
+}
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+.login-box p:last-child {
+  color: #aaa;
+  font-size: 14px;
+}
+.login-box a.a2 {
+  color: #fff;
+  text-decoration: none;
+}
+.login-box a.a2:hover {
+  background: transparent;
+  color: #aaa;
+  border-radius: 5px;
+}
+
+.message-form {
+  margin-top: 40px;
+  width: 100%;
+  height: 150px;
+  outline: none;
+  padding: 10px;
+}/*# sourceMappingURL=styles.css.map */
