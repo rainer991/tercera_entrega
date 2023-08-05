@@ -67,8 +67,6 @@
 
 
   <main class="is-pair footer-font">
-
-
     <div class="container d-flex flex-row ">
       <div class="col">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
@@ -122,8 +120,6 @@
       </div>
     </div>
 
-
-
     <div class="container footer-font" style="min-height: 60vh">
       <p style="text-align: justify">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
@@ -162,24 +158,19 @@
     </div>
   </main>
 
-
-
   <footer class="container-fluid footer-menu">
     <div class="container d-flex is-mobile">
       <div class="col box-img-class my-4 d-flex justify-content-start">
-        <img src="./img/ren-dev-nobg.png" alt="Logo Ren-Dev" width="300px" />
+        <img src="./img/ren-dev-nobg.png" alt="Logo Ren-Dev" class="logo-footer" />
       </div>
 
 
       <div class="d-flex flex-column py-3 mid-section">
         <h2 class="renier-font mx-2 text-center footer-font py-2">SOBRE MI</h2>
-        <p class="mx-4 footer-font">
+        <p class="mx-4 footer-font p-center">
           Página con fines educativos, desarrollador en progreso.
         </p>
       </div>
-
-
-
       <div class="box-class footer-font col">
         <ul class="list-inline px-6">
           <p class="renier-font text-center">SIGUEME</p>
@@ -205,7 +196,6 @@
     </div>
   </footer>
 
-
   <div class="modal-layout d-none" id="contact-form">
     <div class="login-box">
       <i class="fa-regular fa-circle-xmark text-white close-icon" onclick="closeModal()"></i>
@@ -225,26 +215,25 @@
         </div>
         <div class="user-box">
           <textarea required="" name="" class="message-form"></textarea>
-          <label>Comentario</label>
+          <label class="display-6">Comentario</label>
         </div>
         <a href="#" onclick="onSubmit()">
           <span></span>
           <span></span>
           <span></span>
+          <span></span>
+          Enviar
           Enviar
         </a>
-
       </form>
     </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
 
   <script>
-
-
     function showModal() {
       var element = document.getElementById("contact-form");
       element.classList.add("d-block");
@@ -263,15 +252,9 @@
 
       alert("Mensaje enviado")
     }
-
-
-
-
   </script>
 
   <script>
-
-
     function showModal() {
       var element = document.getElementById("contact-form");
       element.classList.add("d-block");
@@ -287,18 +270,16 @@
       var element = document.getElementById("contact-form");
       element.classList.add("d-none");
       element.classList.remove("d-block");
-
       alert("Mensaje enviado")
     }
-
-
-
-
   </script>
-
-
-
-
 </body>
 
 </html>
+
+
+{
+
+max-width: 34ch;
+text-align: center;
+}

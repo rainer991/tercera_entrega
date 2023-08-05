@@ -15,27 +15,18 @@
 }
 
 .container {
-    & .box-class {
-      padding-top: 1rem;
-      display: flex;
-      justify-content: end;
-      
-      & a:hover {
-        color: aqua;
-        transform: rotateY(360deg);
-        transition: .5s;
-      }
-     }
-    }
+  & .box-class {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: end;
 
-    // .box-class{
-    //   .menu-item{
-    //     -webkit-animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) both;
-    //   }
-    //   @for $item from 1 through 4 {
-    //     animation-delay: $item*1s;
-    //   }
-    // }
+    & a:hover {
+      color: aqua;
+      transform: rotateY(360deg);
+      transition: 0.5s;
+    }
+  }
+}
 
 .is-pair {
   display: flex;
@@ -47,26 +38,6 @@
   }
 }
 
-// @-webkit-keyframes slide-top {
-//   0% {
-//     -webkit-transform: translateY(0);
-//             transform: translateY(0);
-//   }
-//   100% {
-//     -webkit-transform: translateX(-200px);
-//             transform: translateX(-200px);
-//   }
-// }
-// @keyframes slide-top {
-//   0% {
-//     -webkit-transform: translateY(0);
-//             transform: translateY(0);
-//   }
-//   100% {
-//     -webkit-transform: translateX(-40px);
-//             transform: translateX(-40px);
-//   }
-// }
 
 
 

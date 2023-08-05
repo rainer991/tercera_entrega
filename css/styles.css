@@ -197,6 +197,13 @@
   .v-tablet {
     flex-direction: column !important;
   }
+  .p-center {
+    max-width: 34ch;
+    text-align: center;
+  }
+  .logo-footer {
+    max-width: 100% !important;
+  }
   .v-mobile {
     display: none;
   }

@@ -18,11 +18,7 @@
         width: 12.5rem !important;
       }
     }
-    
-    // .box-img-class img {
-      //   width: 12.5rem !important;
-      // }
-    
+        
       .mid-section {
         padding-inline: 2rem 0;
       text-align: center;
@@ -49,12 +45,7 @@
         }
       }
     }
-    
-    // .container-img .box-img img {
-      //   height: 400px;
-    //   margin-top: 4rem;
-    // }
-    
+     
     .galery {
       grid-template-columns: repeat(1, 1fr);
     }
@@ -91,15 +82,7 @@
       text-transform: uppercase;
     }
     
-    // .menu a {
-      //   position: relative;
-      //   display: block;
-      //   font-family: 'Ubuntu', sans-serif;
-      //   font-weight: 500;
-      //   text-align: left;
-      //   color: #000;
-      // }
-      
+  
       .renier-logo {
         position: absolute;
       top: 20px;
@@ -121,6 +104,15 @@
   
     .v-tablet{
       flex-direction: column !important;
+    }
+
+    .p-center {
+      max-width: 34ch;
+      text-align: center;
+    }
+
+    .logo-footer {
+      max-width: 100% !important;
     }
 
     .v-mobile{
