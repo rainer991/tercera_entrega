@@ -204,7 +204,7 @@
   p:first-child {
     margin: 0 0 30px;
     padding: 0;
-    color: #fff;
+    color: $mainColor;
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
@@ -218,10 +218,10 @@
       width: 100%;
       padding: 10px 0;
       font-size: 16px;
-      color: #fff;
+      color: $mainColor;
       margin-bottom: 30px;
       border: none;
-      border-bottom: 1px solid #fff;
+      border-bottom: 1px solid $mainColor;
       outline: none;
       background: transparent;
 
@@ -229,7 +229,7 @@
       &:valid ~ label {
         top: -20px;
         left: 0;
-        color: #fff;
+        color: $mainColor;
         font-size: 12px;
       }
     }
@@ -240,7 +240,7 @@
       left: 0;
       padding: 10px 0;
       font-size: 16px;
-      color: #fff;
+      color: $mainColor;
       pointer-events: none;
       transition: 0.5s;
     }
@@ -251,7 +251,7 @@
     display: inline-block;
     padding: 10px 20px;
     font-weight: bold;
-    color: #fff;
+    color: $mainColor;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
@@ -261,7 +261,7 @@
     letter-spacing: 3px;
 
     &:hover {
-      background: #fff;
+      background: $mainColor;
       color: #272727;
       border-radius: 5px;
     }
@@ -276,7 +276,7 @@
       left: -100%;
       width: 100%;
       height: 2px;
-      background: linear-gradient(90deg, transparent, #fff);
+      background: linear-gradient(90deg, transparent, $mainColor);
       animation: btn-anim1 1.5s linear infinite;
 
       @keyframes btn-anim1 {
@@ -295,7 +295,7 @@
       right: 0;
       width: 2px;
       height: 100%;
-      background: linear-gradient(180deg, transparent, #fff);
+      background: linear-gradient(180deg, transparent, $mainColor);
       animation: btn-anim2 1.5s linear infinite;
       animation-delay: 0.375s;
 
@@ -315,7 +315,7 @@
       right: -100%;
       width: 100%;
       height: 2px;
-      background: linear-gradient(270deg, transparent, #fff);
+      background: linear-gradient(270deg, transparent, $mainColor);
       animation: btn-anim3 1.5s linear infinite;
       animation-delay: 0.75s;
 
@@ -335,7 +335,7 @@
       left: 0;
       width: 2px;
       height: 100%;
-      background: linear-gradient(360deg, transparent, #fff);
+      background: linear-gradient(360deg, transparent, $mainColor);
       animation: btn-anim4 1.5s linear infinite;
       animation-delay: 1.125s;
 
@@ -357,7 +357,7 @@
   }
 
   a.a2 {
-    color: #fff;
+    color: $mainColor;
     text-decoration: none;
 
     &:hover {
