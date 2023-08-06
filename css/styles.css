@@ -114,6 +114,10 @@
   padding: 1em 0;
 }
 
+.logo-mob {
+  height: 100px;
+}
+
 @media (max-width: 576px) {
   .is-mobile {
     flex-direction: column;
@@ -192,6 +196,10 @@
   .v-mobile {
     display: block;
   }
+  .logo-mob {
+    margin-top: 34px;
+    width: 60%;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .v-tablet {
@@ -201,8 +209,8 @@
     max-width: 34ch;
     text-align: center;
   }
-  .logo-footer {
-    max-width: 100% !important;
+  .logo-mob {
+    width: 60%;
   }
   .v-mobile {
     display: none;
@@ -214,6 +222,9 @@
 @media (min-width: 992px) {
   .v-landscape {
     display: none;
+  }
+  .logo-mob {
+    width: 60%;
   }
 }
 .galery-font {
@@ -655,4 +666,15 @@
   height: 150px;
   outline: none;
   padding: 10px;
+}
+
+.img-index-base, .img-index {
+  border-radius: 1rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-index {
+  padding-left: 0.5rem;
 }/*# sourceMappingURL=styles.css.map */

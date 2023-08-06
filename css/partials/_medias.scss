@@ -98,6 +98,11 @@
       display: block;
     }
 
+    .logo-mob{
+      margin-top: 34px;
+      width: 60%;
+    }
+
   }
   
   @media (min-width: 768px) and (max-width: 991px) {
@@ -111,8 +116,8 @@
       text-align: center;
     }
 
-    .logo-footer {
-      max-width: 100% !important;
+    .logo-mob{
+      width: 60%;
     }
 
     .v-mobile{
@@ -127,6 +132,9 @@
   @media (min-width: 992px)  {
     .v-landscape{
       display: none;
+    }
+    .logo-mob{
+      width: 60%;
     }
   
   }
