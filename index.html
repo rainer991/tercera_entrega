@@ -53,7 +53,7 @@
               <a class="nav-link" href="pages/galeria.html">Galería</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" onclick="showModal()">Contacto</a>
+              <a class="nav-link" href="pages/contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -145,7 +145,7 @@
       </div>
 
       <div class="col">
-        <img src="./img/rhcp/rhcp-index.jpg" alt="rhcp-band" class="img-index" />
+        <img src="./img/rhcp/rhcp-index.jpg" alt="rhcp-band" class="img-index img-thumbnail" />
       </div>
     </div>
     <hr>
@@ -164,7 +164,7 @@
         </p>
       </div>
       <div class="col">
-        <img src="./img/metallica/metallica-index.jpg" alt="metallica-band" class="img-index" />
+        <img src="./img/metallica/metallica-index.jpg" alt="metallica-band" class="img-index img-thumbnail" />
       </div>
     </div>
     <hr>
@@ -183,7 +183,7 @@
         </p>
       </div>
       <div class="col">
-        <img src="./img/queen/queen-index.jpg" alt="queen-band" class="img-index" />
+        <img src="./img/queen/queen-index.jpg" alt="queen-band" class="img-index img-thumbnail" />
       </div>
     </div>
     <hr>
@@ -201,7 +201,7 @@
         </p>
       </div>
       <div class="col">
-        <img src="./img/incubus/incubus-index.jpg" alt="incubus-band" class="img-index" />
+        <img src="./img/incubus/incubus-index.jpg" alt="incubus-band" class="img-index img-thumbnail" />
       </div>
     </div>
     <hr>
@@ -213,7 +213,7 @@
         </p>
       </div>
       <div class="col">
-        <img src="./img/limp/limp-index.jpg" alt="limp-bizkit-band" class="img-index" />
+        <img src="./img/limp/limp-index.jpg" alt="limp-bizkit-band" class="img-index img-thumbnail" />
       </div>
     </div>
   </main>
@@ -247,82 +247,11 @@
     </div>
   </footer>
 
-  <div class="modal-layout d-none" id="contact-form">
-    <div class="login-box">
-      <i class="fa-regular fa-circle-xmark text-white close-icon" onclick="closeModal()"></i>
-      <p class="text-white">CONTACTO</p>
-      <form>
-        <div class="user-box">
-          <input required="" name="" type="text">
-          <label>Nombre</label>
-        </div>
-        <div class="user-box">
-          <input required="" name="" type="text">
-          <label>Apellido</label>
-        </div>
-        <div class="user-box">
-          <input required="" name="" type="text">
-          <label>Correo</label>
-        </div>
-        <div class="user-box">
-          <textarea required="" name="" class="message-form"></textarea>
-          <label class="display-6">Comentario</label>
-        </div>
-        <a href="#" onclick="onSubmit()">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Enviar
-        </a>
-      </form>
-    </div>
-  </div>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
     </script>
 
-  <script>
-    function showModal() {
-      var element = document.getElementById("contact-form");
-      element.classList.add("d-block");
-      element.classList.remove("d-none");
 
-    }
-    function closeModal() {
-      var element = document.getElementById("contact-form");
-      element.classList.add("d-none");
-      element.classList.remove("d-block");
-    }
-    function onSubmit() {
-      var element = document.getElementById("contact-form");
-      element.classList.add("d-none");
-      element.classList.remove("d-block");
-
-      alert("Mensaje enviado")
-    }
-  </script>
-
-  <script>
-    function showModal() {
-      var element = document.getElementById("contact-form");
-      element.classList.add("d-block");
-      element.classList.remove("d-none");
-
-    }
-    function closeModal() {
-      var element = document.getElementById("contact-form");
-      element.classList.add("d-none");
-      element.classList.remove("d-block");
-    }
-    function onSubmit() {
-      var element = document.getElementById("contact-form");
-      element.classList.add("d-none");
-      element.classList.remove("d-block");
-      alert("Mensaje enviado")
-    }
-  </script>
 </body>
 
 </html>

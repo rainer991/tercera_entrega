@@ -1,11 +1,10 @@
-.img-index-base{
-    border-radius: 1rem;
-    width: 100%;
-    object-fit: cover;
+.img-index-base {
+  border-radius: 1rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 .img-index {
-    @extend .img-index-base;
-    padding-left: .5rem;
-    
+  @extend .img-index-base;
+  padding-left: 0.5rem;
 }
